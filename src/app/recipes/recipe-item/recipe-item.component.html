@@ -1,0 +1,9 @@
+<!-- Esta não é uma página Ionic completa, ela apenas contém alguns componente do ionic 
+Isso não será renderizado como uma página ionic  -->
+
+<ion-item [routerLink]="['./', recipeItem.id]">
+  <ion-avatar>
+    <ion-img [src]="recipeItem.imageUrl"></ion-img>
+  </ion-avatar>
+  <ion-label>{{ recipeItem.title }}</ion-label>
+</ion-item>

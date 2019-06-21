@@ -23,7 +23,9 @@ export class RecipeDetailPage implements OnInit {
   ngOnInit() {
     this.activateRoute.paramMap.subscribe(paramMap => {
       if (!paramMap.has('recipeId')){
-        //return
+        //redirect
+        this.router.navigate(['/recipes']);
+        return;
       }
       //extrai o recipeId do paramMap
       const recipeId = paramMap.get('recipeId');
